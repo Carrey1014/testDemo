@@ -70,6 +70,38 @@
 
                         git reset --hard 版本号     退回到指定的版本
 
+                9. 数据提交     暂存区 => github远程仓库
+                    在数据提交之前，需要github对本电脑授权，即要先生成ssh密匙
+                    
+                    1. 获取ssh密匙指令：
+                        ssh-keygen -t rsa -C "你的github的邮箱"
+                    2. 查找生成的密匙(window操作系统下)：
+                        我的电脑 => 用户 => 用户名文件夹 => .ssh文件夹(隐藏文件) => id_rsa.pub(存有密匙)
+                        直接拖动文件到vscode显示区即可打开
+                    3. 在github账户去配置密匙
+                            github => setting => SSH and GPG keys => New SSH key
+                        将密匙复制到相应区域，并取名
+                    4. 暂存区 => github远程仓库 提交
+                        确定提交地址：
+                                git remote add origin 远程仓库地址(在github上复制即可)
+                            如：
+                                git remote add origin https://github.com/Carrey1014/testDemo.git
+                        确定提交：
+                                git push -u  origin master
+                        【注】提交过程可能需要填写用户名和密码
+                        首次提交需要上述的繁琐步骤
+
+
+                        再次提交后只需：
+                                git add 文件名      提交指定文件
+                                git commit  -m "此次提交的描述" 
+                                git push
+                            两步即可
+                10. 
+                        
+
+
+                    
                     
 
                     
