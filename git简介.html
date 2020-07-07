@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+            git
+                全称是分布式版本控制系统
+            1. git下载与安装：
+                    https://git-scm.com
+
+                vscode  (安装git插件)
+                    打开终端进行操作
+
+
+            2. git启动
+                window键即可打开(window系统)
+
+                git bash        支持Linux命令的控制台(常用)
+                git CMD         支持windows命令的控制台
+                git GUI         git可视化界面
+
+                苹果电脑自带git
+            
+            3. github官网注册   注册一个账号
+            
+            4. git操作步骤
+                1. 打开git CMD(window系统)
+                2. cd 路径      进入到当前目录中
+                3. 在本地配置   => 本地仓库要提交到github远程仓库的地址和名字
+                    在控制台输入：
+                        git config --global user.name "用户名"          填写注册的用户名/昵称
+                        git config --global user.eamil "邮箱"           填写注册时的邮箱
+                        【注】git控制台中，没有消息就是好消息
+                4. 创建github端的远程仓库
+                    github网站上：+ => new repository   常见远程仓库
+                5. 本地初始化       会本地创建一个文件暂存区
+                    git init
+
+                    初始化之后会在本地创建一个.git文件，文件存储了当前信那个木的所有版本信息
+                6. 代码编写
+                    在当前目录下创建.html文件和.md文件
+                7. 数据提交     工作区 => 暂存区
+                    git add 文件名      提交指定文件
+                    git add *           提交所有文件
+
+                    git commit  -m "此次提交的描述"         告诉仓库此次提交的备注
+
+                8. 指示指令
+                    查看当前工作区的状态
+                        git status
+
+                    从缓存区恢复文件到工作区
+                        git checkout 文件名
+
+                    查看工作区和缓存区版本的区别
+                        git diff
+
+                    清屏操作
+                        cls
+
+                    查看已经提交的历史版本
+                        git log
+
+                    恢复文件到一定的版本
+                        git reset --hard HEAD^      退回到上一个版本
+                        git reset --hard HEAD^^     退回两个版本
+
+                        git reset --hard 版本号     退回到指定的版本
+
+                    
+
+                    
+        */
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
